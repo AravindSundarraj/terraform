@@ -29,3 +29,4 @@ plan -out=tfplan
 tfc-getting-started/
 *.hcl
 terraform.tf
+.idea/
