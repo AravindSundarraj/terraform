@@ -16,7 +16,7 @@ provider "aws" {
 resource "aws_instance" "example" {
   ami           = "ami-0c55b159cbfafe1f0" # Amazon Linux 2 AMI in us-west-2 (Update for your desired AMI)
   instance_type = "t2.micro"              # Change this to your desired instance type
-  depends_on = [tee-securityGroup]
+  depends_on = [aws_security_group.tee-securityGroup]
 
 
   tags = {
