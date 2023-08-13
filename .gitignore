@@ -30,3 +30,4 @@ tfc-getting-started/
 *.hcl
 terraform.tf
 .idea/
+.idea/*
