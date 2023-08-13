@@ -11,3 +11,8 @@ variable "ins_name" {
   type    = string
   default = "demo_instance"
 }
+
+variable "sec_name_px" {
+  type    = string
+  default = "ins_sec_px"
+}
