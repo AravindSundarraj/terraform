@@ -9,10 +9,10 @@ variable "vpc_name" {
 
 variable "ins_name" {
   type    = string
-  default = "demo_instance"
+  default = "demo_instance_1"
 }
 
 variable "sec_name_px" {
   type    = string
-  default = "ins_sec_px"
+  default = "ins_sec_pxx"
 }
