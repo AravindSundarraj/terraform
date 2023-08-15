@@ -41,4 +41,17 @@ output "log_out" {
   value = aws_security_group.tee-securityGroup.name
 
 }
+resource "aws_db_instance" "default" {
+  allocated_storage           = 10
+  db_name                     = "mydb"
+  engine                      = "mysql"
+  engine_version              = "5.7"
+  instance_class              = "db.t3.micro"
+  manage_master_user_password = true
+  username                    = "foo"
+  parameter_group_name        = "default.mysql5.7"
+}
+output "db_log_out" {
+  value = aws_db_instance.default.address
+}
 
